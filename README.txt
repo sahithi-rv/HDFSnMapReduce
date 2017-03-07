@@ -19,8 +19,15 @@ To run Datanode:
 	Note: DN_is should be equal to 'dn_port%10'
 	java DataNodeImpl <DN_ip> <dn_port> <namenode_ip> <nn_port> <NumDatanodes> <DN_id>
 
-To run HDFS client: ### This is not required to run for Distributed grep.
+To run HDFS client:
 	java Main namenode_ip nn_port <NumDatanodes>
+	A prompt appears.
+	- $> get (Writes a file to the local filesystem from HDFS)
+		get <input_filename> <output_filename>
+	- $> put (Writes a file to HDFS from local file system)
+		put <input_filename>
+	- $> list (Displays all files present in HDFS)
+		list
 
 
 """MapReduce"""
